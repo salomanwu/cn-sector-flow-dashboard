@@ -3,7 +3,8 @@ name: refresh-data
 # A 股每日 15:00 (UTC+8) 收盘 = 07:00 UTC；09:00 UTC 触发以等待数据上传完毕。
 on:
   schedule:
-    - cron: "0 9 * * 1-5"
+   # - cron: "0 9 * * 1-5"
+     - cron: '17 10 * * 1-5'  # UTC 10:17 = 北京 18:17，周一到周五
   workflow_dispatch:
 
 permissions:
