@@ -4,7 +4,7 @@ name: refresh-data
 on:
   schedule:
    # - cron: "0 9 * * 1-5"
-     - cron: '17 10 * * 1-5'  # UTC 10:17 = 北京 18:17，周一到周五
+     - cron: '17 12 * * 1-5'  # UTC 10:17 = 北京 20:17，周一到周五
   workflow_dispatch:
 
 permissions:
